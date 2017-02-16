@@ -14,6 +14,7 @@ dependencies:
   - alabaster==0.7.9
   - awscli==1.11.48
   - babel==2.3.4
+  - beautifulsoup4==4.5.3
   - botocore==1.5.11
   - click==6.7
   - colorama==0.3.7

@@ -18,8 +18,8 @@ requirements: test_environment
 	pip install -r requirements.txt
 
 ## Make Dataset
-data: requirements
-	$(PYTHON_INTERPRETER) src/data/make_dataset.py
+data: requirements data_fetch_projections
+	$(PYTHON_INTERPRETER) src/data/make_dataset.py data/raw data/processed
 
 ## Delete all compiled Python files
 clean:
@@ -62,8 +62,10 @@ test_environment:
 #################################################################################
 # PROJECT RULES                                                                 #
 #################################################################################
+SEASON = 2017
 
-
+data_fetch_projections: requirements
+	$(PYTHON_INTERPRETER) src/data/fetch_projections.py $(SEASON)
 
 #################################################################################
 # Self Documenting Commands                                                     #
