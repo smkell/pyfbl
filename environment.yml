@@ -1,7 +1,7 @@
 name: pyfbl
 channels: !!python/tuple
-- conda-forge
-- defaults
+- !!python/unicode
+  'defaults'
 dependencies:
 - conda-forge::certifi=2017.1.23=py36_0
 - conda-forge::pip=9.0.1=py36_0
@@ -10,6 +10,25 @@ dependencies:
 - conda-forge::vs2015_runtime=14.0.25420=0
 - conda-forge::wheel=0.29.0=py36_0
 - conda-forge::wincertstore=0.2=py36_0
+- cycler=0.10.0=py36_0
+- icu=57.1=vc14_0
+- jpeg=9b=vc14_0
+- libpng=1.6.27=vc14_0
+- matplotlib=2.0.0=np112py36_0
+- mkl=2017.0.1=0
+- numpy=1.12.0=py36_0
+- openssl=1.0.2k=vc14_0
+- pandas=0.19.2=np112py36_1
+- pyparsing=2.1.4=py36_0
+- pyqt=5.6.0=py36_2
+- python-dateutil=2.6.0=py36_0
+- pytz=2016.10=py36_0
+- qt=5.6.2=vc14_3
+- scipy=0.18.1=np112py36_1
+- sip=4.18=py36_0
+- six=1.10.0=py36_0
+- tk=8.5.18=vc14_0
+- zlib=1.2.8=vc14_3
 - pip:
   - alabaster==0.7.9
   - awscli==1.11.48
@@ -19,6 +38,7 @@ dependencies:
   - click==6.7
   - colorama==0.3.7
   - coverage==4.3.4
+  - dictionaries==0.0.1
   - docutils==0.13.1
   - flake8==3.3.0
   - imagesize==0.7.1
@@ -26,19 +46,17 @@ dependencies:
   - jmespath==0.9.1
   - markupsafe==0.23
   - mccabe==0.6.1
+  - py-flags==1.1.2
   - pyasn1==0.2.2
   - pycodestyle==2.3.1
   - pyflakes==1.5.0
   - pygments==2.2.0
-  - python-dateutil==2.6.0
   - python-dotenv==0.6.3
-  - pytz==2016.10
   - pyyaml==3.12
   - requests==2.13.0
   - rsa==3.4.2
   - s3transfer==0.1.10
-  - six==1.10.0
   - snowballstemmer==1.2.1
   - sphinx==1.5.2
-prefix: C:\Program Files\Anaconda3\envs\pyfbl
+prefix: C:\Users\sean\Miniconda2\envs\pyfbl
 
